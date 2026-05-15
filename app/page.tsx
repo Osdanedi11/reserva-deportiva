@@ -14,8 +14,12 @@ export default function Home() {
         />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
           <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+            Sistema de Reservas Deportivas.
           </h1>
+          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
+            Este proyecto es un sistema de reservas deportivas desarrollado por Oscar Daniel Arce Barquero. Permite a los usuarios reservar canchas deportivas de manera fácil y eficiente, 
+            proporcionando una plataforma intuitiva para gestionar sus reservas.
+          </p>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
             Looking for a starting point or more instructions? Head over to{" "}
             <a

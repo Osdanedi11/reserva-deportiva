@@ -1,24 +1,32 @@
 import Navbar from "../components/Navbar";
+import SportCard from "../components/SportCard";
+import { courts } from "../data/courts";
 
 export default function Home() {
   return (
     <>
       <Navbar />
 
-      <main className="min-h-screen bg-gray-950 text-white flex flex-col items-center justify-center p-8">
-        <div className="max-w-2xl text-center">
-          <h1 className="text-5xl font-bold mb-6">
+      <main className="min-h-screen bg-gray-950 text-white p-8">
+        <div className="max-w-7xl mx-auto">
+          <h1 className="text-5xl font-bold mb-4">
             Sistema de Reservas Deportivas
           </h1>
 
-          <p className="text-gray-400 text-xl mb-8">
-            Reserva canchas de tenis, pádel, pickleball y volleyball
-            fácilmente desde cualquier dispositivo.
+          <p className="text-gray-400 text-xl mb-12">
+            Reserva canchas fácilmente desde cualquier dispositivo.
           </p>
 
-          <button className="bg-green-500 hover:bg-green-600 transition px-6 py-3 rounded-xl text-lg font-semibold">
-            Reservar Ahora
-          </button>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {courts.map((court) => (
+              <SportCard
+                key={court.id}
+                name={court.name}
+                sport={court.sport}
+                desc={court.desc}
+              />
+            ))}
+          </div>
         </div>
       </main>
     </>

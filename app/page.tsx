@@ -21,8 +21,10 @@ export default function Home() {
             {courts.map((court) => (
               <SportCard
                 key={court.id}
+                id={court.id}
                 name={court.name}
                 sport={court.sport}
+                type={court.type}
                 desc={court.desc}
               />
             ))}

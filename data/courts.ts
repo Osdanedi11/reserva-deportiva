@@ -3,36 +3,47 @@ export const courts = [
     id: 1,
     name: "Tenis Techada",
     sport: "Tenis",
-    desc: "Superficie dura/rápida Indoor",
+    type: "Indoor",
+    desc: "Cancha techada",
   },
+
   {
     id: 2,
     name: "Tenis Aire Libre",
     sport: "Tenis",
-    desc: "Superficie dura/rápida Outdoor",
+    type: "Outdoor",
+    desc: "Cancha exterior",
   },
+
   {
     id: 3,
     name: "Pádel Verde",
     sport: "Pádel",
-    desc: "Estándar escalonada, superficie de cesped artificial",
+    type: "Césped artificial",
+    desc: "Cancha profesional",
   },
+
   {
     id: 4,
     name: "Pádel Azul",
     sport: "Pádel",
-    desc: "Pista de Lateral Recto, superficie de cesped artificial",
+    type: "Cristal",
+    desc: "Cancha rápida",
   },
+
   {
     id: 5,
     name: "Volleyball Playa",
     sport: "Volleyball",
-    desc: "Superficie de Arena",
+    type: "Arena",
+    desc: "Cancha de playa",
   },
+
   {
     id: 6,
     name: "Pickleball",
     sport: "Pickleball",
-    desc: "Exterior",
+    type: "Exterior",
+    desc: "Cancha pickleball",
   },
 ];
